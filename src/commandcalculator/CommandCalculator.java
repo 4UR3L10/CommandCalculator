@@ -8,7 +8,33 @@ public class CommandCalculator
      */
     public static void main(String[] args) 
     {
-        // TODO code application logic here
+        char operation = ' ';
+        Operations calculator = new Operations();
+        
+        System.out.println("Enter a an operation: ");
+        
+        switch(operation)
+        {
+            case '+':
+                System.out.println("not define yet");
+            break;
+            
+            case '-':
+                System.out.println("not define yet");
+            break;
+            
+            case '*':
+                System.out.println("not define yet");
+            break;
+            
+            case '/':
+                System.out.println("not define yet");
+            break;
+            
+            default:
+                System.out.println("Not ");
+        }
+        
     }
     
 }
