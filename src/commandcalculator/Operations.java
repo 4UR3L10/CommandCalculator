@@ -16,6 +16,8 @@ public class Operations {
     static int val_1;
     static int val_2;
     static int result;
+//    static double resultf;
+    static Scanner keyboard = new Scanner(System.in);
 
     public int add(int val_1, int val_2)
     {
