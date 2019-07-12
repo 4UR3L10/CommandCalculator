@@ -1,10 +1,14 @@
-1 - Clone a repository from the Internet.
-2 - Select the repository you want. 
-3 - Create a personalBranch to work on your tasks.
+1 - Select the repository you want. 
+2 - work on your branch
+3 - Merge it with "merge-Aurelio-William"
 
 +++William+++
 Domain Class
-Methods(+,-,*,/,Power,Sqrt)
+Methods(+,-,*,/)
+
+To fix:
+- fix all errors in the program (DO NOT CHANGE ANYTHING IN MAIN.)
+- You do not need data fields.
 
 +++Aurelio+++
 Main CLass.
