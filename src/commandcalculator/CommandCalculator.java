@@ -117,7 +117,7 @@ public class CommandCalculator
                             
                         } catch(MyException e)
                         {
-                            e.toString();
+                            System.out.println(e.toString());
                         }                       
                     } catch (Exception InputMismatchException)
                     {
