@@ -12,6 +12,6 @@ public class MyException extends Throwable
     @Override
     public String toString()
     {
-        return "Division by zero is not defined " + "Invalid number: " + number;
+        return "Division by zero is not defined " + "Invalid number: " + number + "\n";
     }
 }
