@@ -34,5 +34,10 @@ public class Operations {
 
         return result;
     }
+    public int substract(int val_1, int val_2) 
+    {
+
+        return result;
+    }
 
 }
