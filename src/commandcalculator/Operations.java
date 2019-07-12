@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Operations {
     
-    static double result;
+    static double result=0.0;
     public double add(double val_1, double val_2) 
     {
        
@@ -24,18 +24,18 @@ public class Operations {
 
     public double multiply(double val_1, double val_2) 
     {
-
+        result = val_1 * val_2;
         return result;
     }
 
     public double division(double val_1, double val_2) 
     {
-
+        result = val_1 / val_2;
         return result;
     }
     public double substract(double val_1, double val_2) 
     {
-
+        result = val_1 - val_2;
         return result;
     }
 
