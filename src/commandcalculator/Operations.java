@@ -16,16 +16,14 @@ public class Operations {
     static int val_1;
     static int val_2;
     static int result;
-//    static double resultf;
-    static Scanner keyboard = new Scanner(System.in);
 
-    public int add(int val_1, int val_2)
+    public int add(int val_1, int val_2) 
     {
 
         return result;
     }
 
-    public int multiply(int val_1, int val_2)
+    public int multiply(int val_1, int val_2) 
     {
 
         return result;
@@ -33,7 +31,7 @@ public class Operations {
 
     public int division(int val_1, int val_2) 
     {
-        
+
         return result;
     }
 
