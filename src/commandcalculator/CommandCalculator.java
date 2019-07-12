@@ -39,14 +39,15 @@ public class CommandCalculator
                         tempNumOne = keyboard.nextDouble();
                         System.out.println("Enter number two:");
                         tempNumTwo = keyboard.nextDouble();
+                        
+                        // Displaying the result.
+                        System.out.println("The result is: " + calculator.add(tempNumOne, tempNumTwo) + "\n");
+                    
                     } catch (Exception InputMismatchException)
                     {
                         // The user typed a bad input.Get the error and continue running the program without crashing.
                         System.out.println("!!!Error!!! You didn't enter a number, try again\n");
-                    }
-
-                    // Displaying the result.
-                    System.out.println("The result is: " + calculator.add(tempNumOne, tempNumTwo) + "\n");
+                    }                    
                     break;
 
                 // Substraction.    
@@ -59,14 +60,13 @@ public class CommandCalculator
                         tempNumOne = keyboard.nextDouble();
                         System.out.println("Enter number two:");
                         tempNumTwo = keyboard.nextDouble();
+                        // Displaying the result.
+                        System.out.println("The result is: " + calculator.substract(tempNumOne, tempNumTwo) + "\n");
                     } catch (Exception InputMismatchException)
                     {
                         // The user typed a bad input.Get the error and continue running the program without crashing.
                         System.out.println("!!!Error!!! You didn't enter a number, try again\n");
                     }
-
-                    // Displaying the result.
-                    System.out.println("The result is: " + calculator.substract(tempNumOne, tempNumTwo) + "\n");
                     break;
 
                 // Multiplication.    
@@ -79,14 +79,14 @@ public class CommandCalculator
                         tempNumOne = keyboard.nextDouble();
                         System.out.println("Enter number two:");
                         tempNumTwo = keyboard.nextDouble();
+                        
+                        // Displaying the result.
+                        System.out.println("The result is: " + calculator.multiply(tempNumOne, tempNumTwo) + "\n");
                     } catch (Exception InputMismatchException)
                     {
                         // The user typed a bad input.Get the error and continue running the program without crashing.
                         System.out.println("!!!Error!!! You didn't enter a number, try again\n");
                     }
-
-                    // Displaying the result.
-                    System.out.println("The result is: " + calculator.multiply(tempNumOne, tempNumTwo) + "\n");
                     break;
 
                 case '/':
@@ -102,17 +102,23 @@ public class CommandCalculator
                         System.out.println("Enter number two:");
                         tempNumTwo = keyboard.nextDouble();
 
-                        // Catch an error(Exceptions) in case of division by 0. FIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-//                        try
-//                        {
-                        result = calculator.division(tempNumOne, tempNumTwo);
-//                        } catch (Exception DivisionByZero)
-//                        {
-//                            System.out.println("!!!Error!!! Division by zero is not defined, try again\n");
-//                        }                                                      FIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                        // Displaying the result.
-                        System.out.println("The result is: " + result + "\n");
-
+                        // Catch an error(Exceptions) in case of division by 0.
+                        try
+                        {
+                            if (tempNumTwo == 0.0)
+                            {
+                                throw new MyException(tempNumTwo);
+                            }
+                            
+                            result = calculator.division(tempNumOne, tempNumTwo);
+                            
+                            // Displaying the result.
+                            System.out.println("The result is: " + result + "\n");
+                            
+                        } catch(MyException e)
+                        {
+                            System.out.println(e.toString());
+                        }                       
                     } catch (Exception InputMismatchException)
                     {
                         // The user typed a bad input.Get the error and continue running the program without crashing.

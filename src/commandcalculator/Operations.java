@@ -12,26 +12,30 @@ import java.util.Scanner;
  * @author w_ara
  */
 public class Operations {
-
-    static int val_1;
-    static int val_2;
-    static int result;
-
-    public int add(int val_1, int val_2) 
+    
+    static double result=0.0;
+    public double add(double val_1, double val_2) 
     {
+       
+        result = val_1 + val_2;
 
+        return (double)result;
+    }
+
+    public double multiply(double val_1, double val_2) 
+    {
+        result = val_1 * val_2;
         return result;
     }
 
-    public int multiply(int val_1, int val_2) 
+    public double division(double val_1, double val_2) 
     {
-
+        result = val_1 / val_2;
         return result;
     }
-
-    public int division(int val_1, int val_2) 
+    public double substract(double val_1, double val_2) 
     {
-
+        result = val_1 - val_2;
         return result;
     }
 
